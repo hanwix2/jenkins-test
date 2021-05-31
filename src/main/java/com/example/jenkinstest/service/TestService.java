@@ -9,4 +9,8 @@ public class TestService {
         return "test message";
     }
 
+    public String getAnotherMessage() {
+        return "another message";
+    }
+
 }

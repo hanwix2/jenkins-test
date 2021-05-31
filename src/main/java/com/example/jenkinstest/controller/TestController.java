@@ -14,8 +14,13 @@ public class TestController {
     private TestService testService;
 
     @GetMapping
-    public String test() {
+    public String test1() {
         return testService.getTestMessage();
+    }
+
+    @GetMapping
+    public String test2() {
+        return testService.getAnotherMessage();
     }
 
 }
