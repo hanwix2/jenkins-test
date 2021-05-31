@@ -13,12 +13,12 @@ public class TestController {
 
     private TestService testService;
 
-    @GetMapping
+    @GetMapping("/1")
     public String test1() {
         return testService.getTestMessage();
     }
 
-    @GetMapping
+    @GetMapping("/2")
     public String test2() {
         return testService.getAnotherMessage();
     }
