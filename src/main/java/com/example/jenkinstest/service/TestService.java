@@ -16,5 +16,8 @@ public class TestService {
     public String getMoreMessage() {
         return "more message";
     }
-    
+
+    public String getBetterMessage() {
+        return "better message";
+    }
 }
