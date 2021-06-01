@@ -13,4 +13,8 @@ public class TestService {
         return "another message";
     }
 
+    public String getMoreMessage() {
+        return "more message";
+    }
+    
 }

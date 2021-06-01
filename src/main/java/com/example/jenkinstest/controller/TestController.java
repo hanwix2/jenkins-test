@@ -23,4 +23,9 @@ public class TestController {
         return testService.getAnotherMessage();
     }
 
+    @GetMapping("/3")
+    public String test3() {
+        return testService.getMoreMessage();
+    }
+
 }
