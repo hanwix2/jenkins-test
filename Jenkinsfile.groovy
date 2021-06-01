@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean package -DskipTests=true'
+                sh 'mvn clean package -Dmaven.test.skip=true'
             }
             post {
                 success {
@@ -31,4 +31,14 @@ pipeline {
         }
 
     }
+
+    post {
+        success {
+            slackSend(channel: '#프로젝트', color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+        }
+        failure {
+            slackSend(channel: '#프로젝트', color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+        }
+    }
+
 }
