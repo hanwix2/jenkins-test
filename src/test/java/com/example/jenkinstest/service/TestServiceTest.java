@@ -31,4 +31,10 @@ class TestServiceTest {
         assertEquals("better message", msg);
     }
 
+    @Test
+    public void getNormalMessage() {
+        String msg = testService.getNormalMessage();
+        assertEquals("better message", msg);
+    }
+
 }
