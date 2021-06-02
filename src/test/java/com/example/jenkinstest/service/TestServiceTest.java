@@ -34,7 +34,7 @@ class TestServiceTest {
     @Test
     public void getNormalMessage() {
         String msg = testService.getNormalMessage();
-        assertEquals("normal message?", msg);
+        assertEquals("normal message", msg);
     }
 
 }
