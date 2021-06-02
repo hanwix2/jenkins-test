@@ -21,7 +21,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn surefire:test'
+                sh 'mvn test'
             }
             post {
                 success {

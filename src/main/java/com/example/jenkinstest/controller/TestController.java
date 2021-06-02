@@ -33,4 +33,9 @@ public class TestController {
         return testService.getBetterMessage();
     }
 
+    @GetMapping("/5")
+    public String test5() {
+        return testService.getNormalMessage();
+    }
+
 }

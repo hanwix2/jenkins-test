@@ -20,4 +20,8 @@ public class TestService {
     public String getBetterMessage() {
         return "better message";
     }
+
+    public String getNormalMessage() {
+        return "normal message";
+    }
 }
