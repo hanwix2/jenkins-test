@@ -28,4 +28,14 @@ public class TestController {
         return testService.getMoreMessage();
     }
 
+    @GetMapping("/4")
+    public String test4() {
+        return testService.getBetterMessage();
+    }
+
+    @GetMapping("/5")
+    public String test5() {
+        return testService.getNormalMessage();
+    }
+
 }
